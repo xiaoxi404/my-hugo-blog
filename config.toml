@@ -1,6 +1,6 @@
 baseurl = "/"
-languageCode = "en-us"
-title = "A minimal Hugo website"
+languageCode = "zh-cn"
+title = "A minimal Hugo blog"
 theme = "xmin"
 ignoreFiles = [
   "\\.Rmd$",
@@ -21,30 +21,21 @@ url = ""
 weight = 1
 
 [[menu.main]]
-name = "About"
-url = "about/"
+name = "posts"
+url = "posts/"
 weight = 2
 
 [[menu.main]]
-name = "Categories"
-url = "categories/"
-weight = 3
-
-[[menu.main]]
-name = "posts"
-url = "posts/"
-weight = 4
-
-[[menu.main]]
 name = "Subscribe"
+weight = 3
 url = "index.xml"
 
 [params]
 description = "A website built through Hugo and blogdown."
-footer = "&copy; [xiaoxi404](https://yihui.org) 2022 -- {Year} | [Github](https://github.com/xiaoxi404)"
+footer = "&copy; [xiaoxi404](https://blog.nobody404.xyz) 2022 -- {Year} | [Github](https://github.com/xiaoxi404)"
 
 [markup.highlight]
-codeFences = false
+codeFences = true
 
 [markup.goldmark.renderer]
 unsafe = true
