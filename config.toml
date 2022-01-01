@@ -1,0 +1,50 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "A minimal Hugo website"
+theme = "xmin"
+ignoreFiles = [
+  "\\.Rmd$",
+  "\\.Rmarkdown$",
+  "_cache$",
+  "\\.knit\\.md$",
+  "\\.utf8\\.md$"
+]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+note = "/note/:year/:month/:day/:slug/"
+post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[menu.main]]
+name = "Categories"
+url = "categories/"
+weight = 3
+
+[[menu.main]]
+name = "posts"
+url = "posts/"
+weight = 4
+
+[[menu.main]]
+name = "Subscribe"
+url = "index.xml"
+
+[params]
+description = "A website built through Hugo and blogdown."
+footer = "&copy; [xiaoxi404](https://yihui.org) 2022 -- {Year} | [Github](https://github.com/xiaoxi404)"
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+unsafe = true
