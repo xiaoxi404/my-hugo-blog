@@ -1,7 +1,7 @@
 ---
 title: "Hugo博客搭建"
 date: 2022-01-01T15:03:42+08:00
-draft: true
+draft: false
 ---
 
 # Hugo 博客的搭建 
