@@ -14,12 +14,12 @@ slug: build-hugo-blog
 ~~~
 hugo new site {your blog name}
 ~~~
-添加主题(这里以Ananke为例)，hugo的[主题商店](https://themes.gohugo.io)
+添加主题(这里以Ananke为例)，hugo的[主题商店](https://themes.gohugo.io)，注意你选择了一个主题后需要根据他的示例配置文件来进行修改config.toml(其在更目录下)
 ~~~
 git aubmodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 ~~~
 ## 开始写博客文章
-{category name} 是你的文章类别，{title}你的文章题目，注意你选择了一个主题后需要根据他的示例配置文件来进行修改config.toml(其在更目录下)
+{category name} 是你的文章类别，{title}你的文章题目
 ~~~
 hugo new {category name}/{title}
 ~~~
