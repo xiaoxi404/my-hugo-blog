@@ -2,6 +2,7 @@
 title: "Hugo博客搭建"
 date: 2022-01-01T15:03:42+08:00
 draft: false
+slug: build-hugo-blog
 ---
 
 # Hugo 博客的搭建 
