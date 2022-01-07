@@ -16,6 +16,7 @@ enableEmoji = true
 
 [permalinks]
 posts = "/post/:year/:month/:day/:slug/"
+leet-code = "/leet-code/:year/:month/:day/:slug/"
 
 [[menu.main]]
 name = "Home"
@@ -28,8 +29,13 @@ url = "posts/"
 weight = 2
 
 [[menu.main]]
-name = "Subscribe"
+name = "leet-code"
+url = "leet-code/"
 weight = 3
+
+[[menu.main]]
+name = "Subscribe"
+weight = 4
 url = "index.xml"
 
 [params]
