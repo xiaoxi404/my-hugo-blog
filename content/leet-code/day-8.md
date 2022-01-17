@@ -2,7 +2,7 @@
 title: "LeetCode Day 8"
 date: 2022-01-15T22:31:44+08:00
 draft: false
-slug: dqy-8
+slug: day-8
 ---
 
 今天继续leetcode打卡，今天是链表和队列相关的2道题。
