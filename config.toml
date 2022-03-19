@@ -17,7 +17,8 @@ enableEmoji = true
 [permalinks]
 posts = "/post/:year/:month/:day/:slug/"
 leet-code = "/leet-code/:year/:month/:day/:slug/"
-csapp = "/csapp/:year/:month/:day/:slug/"
+csapp = "/study/csapp/:year/:month/:day/:slug/"
+missing-semester = "/study/missing-semester/:year/:month/:day/:slug/"
 
 [[menu.main]]
 name = "Home"
@@ -25,18 +26,18 @@ url = ""
 weight = 1
 
 [[menu.main]]
-name = "posts"
+name = "乱七八糟"
 url = "posts/"
 weight = 2
 
 [[menu.main]]
-name = "leet-code"
+name = "力扣"
 url = "leet-code/"
 weight = 3
 
 [[menu.main]]
-name = "csapp"
-url = "csapp/"
+name = "学习"
+url = "study/"
 weight = 4
 
 [[menu.main]]
