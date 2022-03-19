@@ -1,7 +1,7 @@
 ---
 title: "暗影精灵8安装Archlinux"
 date: 2022-03-19T11:21:01+08:00
-draft: true
+draft: false
 slug: Omen-Archlinux
 ---
 
