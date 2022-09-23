@@ -99,7 +99,7 @@ shell的通配：
 ls -h -a --color -lt -u
 ~~~
 
-2.
+3.
 ~~~
 #!/usr/bin/env bash
 
@@ -118,4 +118,14 @@ echo "错误次数为 $num" >> result.txt
 
 ~~~
 
-后面几题未写出来。
+4.
+~~~
+find ./test -type f -name '*.html' | xargs -d '\n' 7z a html.zip
+~~~
+
+5.
+不会
+答案解析：
+~~~
+find . -type f | xargs ls -lt | head -n 1
+~~~
