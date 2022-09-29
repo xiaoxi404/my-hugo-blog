@@ -1,7 +1,7 @@
 ---
 title: "Csapp Datalab 1"
 date: 2022-01-10T21:01:20+08:00
-draft: false
+draft: true
 slug: datalab-1
 ---
 
