@@ -118,7 +118,7 @@ OS在启动时设置陷阱处理程序并启动时钟中断，然后在受限模
 
 先进先出服务，又称先到先服务（First Come First Served 或 FCFS）。
 
-![FIFO](https://img.nobody404.xyz/img/FIFO.webp)
+![FIFO](https://b2.xiaoxi404.com/img/FIFO.webp)
 
 护航效应（convoy effect），一些耗时较少的潜在资源消费者被排在重量级的资源消费者之后。
 
@@ -126,13 +126,13 @@ OS在启动时设置陷阱处理程序并启动时钟中断，然后在受限模
 
 最短任务优先（Shorted Job First，SJF）。
 
-![SJF](https://img.nobody404.xyz/img/SJF.webp)
+![SJF](https://b2.xiaoxi404.com/img/SJF.webp)
 
 ## 7.5 最短完成时间优先（STCF）
 
 STCF：向 SJF 添加抢占，称为最短完成时间优先（Shortest Time-to-Completion First，STCF）或抢占式最短作业优先（Preemptive Shortest Job First ，PSJF）。每当新工作进入系统时，它就会确定剩余工作和新工作中，谁的剩余时间最少，然后调度该工作。
 
-![STCF](https://img.nobody404.xyz/img/STCF.webp)
+![STCF](https://b2.xiaoxi404.com/img/STCF.webp)
 
 ## 7.6 新度量指标：响应时间
 
@@ -142,7 +142,7 @@ STCF：向 SJF 添加抢占，称为最短完成时间优先（Shortest Time-to-
 
 轮转（Round-RObin，RR）：RR 在一个时间片（time slice，有时称为调度量子，scheduling quantum，其长度必须是时钟中断周期的倍数）内运行一个工作，然后切换到运行队列中的下一个任务，而不是运行一个任务直到结束。它反复执行，直到所有任务完成。
 
-![RR](https://img.nobody404.xyz/img/RR.webp)
+![RR](https://b2.xiaoxi404.com/img/RR.webp)
 
 突然上下文切换的成本将影响整体性能。因此，系统设计者需要权衡时间片的长度，使其足够长，以便摊销（amortize）上下文切换成本，而又不会使系统不及时响应。
 
@@ -150,7 +150,7 @@ STCF：向 SJF 添加抢占，称为最短完成时间优先（Shortest Time-to-
 
 如下图将A工作分割成小的子工作。
 
-![schedule_with_IO](https://img.nobody404.xyz/img/schedule_with_IO.webp)
+![schedule_with_IO](https://b2.xiaoxi404.com/img/schedule_with_IO.webp)
 
 ## 7.9 无法预知
 
@@ -176,7 +176,7 @@ MLFQ 中有许多独立的队列（queue），每个队列有不同的优先级�
 
 - 规则2： 如果 A 的优先级 = B 的优先级，轮转运行 A 和 B。
 
-![MLFQ-1](https://img.nobody404.xyz/img/MLFQ-1.webp)
+![MLFQ-1](https://b2.xiaoxi404.com/img/MLFQ-1.webp)
 
 ## 8.2 尝试1：如何改变优先级
 
@@ -184,7 +184,7 @@ MLFQ 中有许多独立的队列（queue），每个队列有不同的优先级�
 - 规则 4a：工作用完整个时间片后，降低其优先级（移入下一个队列）。
 - 规则 4b：如果工作在其时间片以内主动释放CPU，则优先级不变。
 
-![MLFQ-2](https://img.nobody404.xyz/img/MLFQ-2.webp)
+![MLFQ-2](https://b2.xiaoxi404.com/img/MLFQ-2.webp)
 
 这会带来饥饿问题（starvation）。如果系统有“太多”交互型工作，就会不断占用
 CPU，导致长工作永远无法得到 CPU（它们饿死了）。
@@ -197,7 +197,7 @@ CPU，导致长工作永远无法得到 CPU（它们饿死了）。
 
 S如何设置是一个问题，。如果 S 设置得太高，长工作会饥饿；如果设置得太低，交互型工作又得不到合适的 CPU 时间比例。
 
-![MLFQ-3](https://img.nobody404.xyz/img/MLFQ-3.webp)
+![MLFQ-3](https://b2.xiaoxi404.com/img/MLFQ-3.webp)
 
 ## 8.4 尝试3：更好的计时方式
 
@@ -205,7 +205,7 @@ S如何设置是一个问题，。如果 S 设置得太高，长工作会饥饿�
 
 - 规则 4：一旦工作用完了其在某一层中的时间配额（无论中间主动放弃了多少次CPU），就降低其优先级（移入低一级队列）。
 
-![MLFQ-4](https://img.nobody404.xyz/img/MLFQ-4.webp)
+![MLFQ-4](https://b2.xiaoxi404.com/img/MLFQ-4.webp)
 
 ## 8.5 MLFQ 调优及其他问题
 

@@ -39,7 +39,7 @@ slug: cpu-virtualization-1
 - 就绪（ready）：在就绪状态下，进程已准备好运行，但由于某种原因，操作系统选择不在此时运行。
 - 堵塞（blocked）：在堵塞状态下，一个进程执行了某种操作，直到发生其他事件时才会准备运行。一个常见例子：当进程向磁盘发起I/O请求时，它会被阻塞，因此其他进程可以使用处理器。
 
-![进程：状态切换](https://img.nobody404.xyz/img/%E8%BF%9B%E7%A8%8B%E8%BD%AC%E6%8D%A2.webp)
+![进程：状态切换](https://b2.xiaoxi404.com/img/%E8%BF%9B%E7%A8%8B%E8%BD%AC%E6%8D%A2.webp)
 
 ## 4.5 数据结构
 

@@ -50,19 +50,19 @@ clash tun不能使用这不能忍啊。最后我想到的办法是，nat（默�
 网络配置：
 1. 虚拟机配置
 
-![vm config](https://img.nobody404.xyz/img/Hyper-v_1.webp)
+![vm config](https://b2.xiaoxi404.com/img/Hyper-v_1.webp)
 
-![vswitch config](https://img.nobody404.xyz/img/Hyper-v_2.webp)
+![vswitch config](https://b2.xiaoxi404.com/img/Hyper-v_2.webp)
 
 2. 网卡ip配置
 
 windows 网卡配置
 
-![windows interface config](https://img.nobody404.xyz/img/Hyper-v_3.webp)
+![windows interface config](https://b2.xiaoxi404.com/img/Hyper-v_3.webp)
 
 linux 网卡配置
 
-![linux interface config](https://img.nobody404.xyz/img/Hyper-v_4.png)
+![linux interface config](https://b2.xiaoxi404.com/img/Hyper-v_4.png)
 
 **重点放开防火墙，否则宿主和寄生操作系统无法通行**
 
@@ -70,10 +70,10 @@ linux 网卡配置
 
 3. 操作完成后测试
 
-![测试截图](https://img.nobody404.xyz/img/Hyper-v_5.png)
+![测试截图](https://b2.xiaoxi404.com/img/Hyper-v_5.png)
 
 windows上clash开启tun模式，可以富强
-![测试截图2](https://img.nobody404.xyz/img/Hyper-v_6.png)
+![测试截图2](https://b2.xiaoxi404.com/img/Hyper-v_6.png)
 
 # 总结
 

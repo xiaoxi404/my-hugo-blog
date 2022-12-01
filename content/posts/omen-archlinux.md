@@ -17,7 +17,7 @@ slug: Omen-Archlinux
 
 通过翻阅ArchWIKI，发现这个声卡问题应该是暗影精灵8的声卡太新造成的，安装sof-firmware和alsa-ucm-conf这2个固件即可解决。
 
-![ALSA](https://img.nobody404.xyz/img/ALSA.webp)
+![ALSA](https://b2.xiaoxi404.com/img/ALSA.webp)
 
 ## 日常使用
 
