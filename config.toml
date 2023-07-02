@@ -48,7 +48,7 @@ url = "index.xml"
 
 [params]
 description = "A website built through Hugo and blogdown."
-footer = "&copy; [xiaoxi404](https://blog.nobody404.xyz) 2022 -- {Year} | [Github](https://github.com/xiaoxi404)"
+footer = "&copy; [xiaoxi404](https://xiaoxi404.com) 2022 -- {Year} | [Github](https://github.com/xiaoxi404)"
 
 [markup.highlight]
 codeFences = true
