@@ -38,8 +38,8 @@ TASK WARNINGS: 1`，翻阅PVE官方文档未找到想要答案，只注意到这
 
 ## 结语
 
-暑假时给家里换路由器时，因为没有现成Openwrt系统镜像，所以需要自己编译openwrt系统。因为编译需要Ubuntu系统环境，但我不想再开一台虚拟机，所以选择在容器里面编译（反正编译也不会依赖内核）。当时我有docker和systemd-nspawn2个选择，systemd-nspawn最初是在archlinuxcn tg群里面经常见人提到，翻阅[systemd-nspawn](https://wiki.archlinux.org/title/Systemd-nspawn)的archwiki后发现它提供一个比docker更原生linux系统的体验，docker主要是用来部署程序，系统阉割不少。最后选择使用systemd-nspawn，在容器里面Openwrt编译成功，而且它也提供了极为接近原生ubuntu系统的体验。
+这次折腾CT，主要是因为我想要部署cloudflared来做内网穿透，但是为了这一个程序开一台虚拟机，有点浪费资源，加之一直想要折腾PVE的CT。
 
-正是因为这次systemd-nspawn经历，所以这次折腾cloudflared时我选择直接使用CT部署，只为了这一个程序来开一台虚拟机资源有点浪费，顺便折腾PVE的CT，CT的使用体验也没有让人失望。CT和host共用内核，不要像VM一样承担系统固定的资源消耗。我目前使用的CT只运行了一个cloudflared，它日常只使用了42mb内存和727mb存储。如果将CT和VM上的docker对比，他们最显著的差异就是CT更像一个系统，里面默认可以使用systemd，可以像VM一样通过ssh访问，而且可以像VM一样在PVE web面板控制和备份。虽然docker也可以用systemd和ssh，但需要一些操作。
+CT的使用体验也没有让人失望。CT和host共用内核，不需要像VM一样承担系统固定的资源消耗。我目前使用的CT只运行了一个cloudflared，它日常只使用42mb内存和727mb存储。如果将CT和docker对比，他们最显著的差异就是CT更像一个系统，里面默认可以使用systemd，可以像VM一样通过ssh访问，而且可以像VM一样在PVE web面板控制和备份。虽然docker也可以用systemd和ssh，但需要一些额外操作。
 
-博主认为如果在PVE环境下如果只是想要运行一些简单程序，可以考虑使用CT，使用它确实可以节省不少内存和存储，而且CT创建也更加简单快速。
+博主认为如果在PVE下如果只是想要运行一些简单程序，可以考虑使用CT，使用它确实可以节省不少内存和存储，而且CT创建也更加简单快速。
