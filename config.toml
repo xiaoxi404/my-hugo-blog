@@ -31,10 +31,10 @@ name = "乱七八糟"
 url = "posts/"
 weight = 2
 
-[[menu.main]]
-name = "力扣"
-url = "leet-code/"
-weight = 3
+#[[menu.main]]
+#name = "力扣"
+#url = "leet-code/"
+#weight = 3
 
 [[menu.main]]
 name = "学习"
