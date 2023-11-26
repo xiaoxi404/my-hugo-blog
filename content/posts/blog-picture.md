@@ -6,10 +6,14 @@ slug: blog-picture
 ---
 ## 介绍
 backbalze是一家云存储厂商，他家存储一直以便宜著称，而且他家是有免费额度的，10GB存储免费空间，每天10GB免费下载流量和2500API免费调用次数，可以说是非常良心了.而且它还是cloudflare的带宽联盟的成员，这个联盟致力于为共同客户降低或免除数据传输，所以cloudflare的cdn访问他的对象存储的流量是免费的，而且cdn还能缓存图片，这样产生的流量和api调用就更少了，所以我们利用这一点来免费存储和分享自己的博客图片。
-![BandwidthAlliance](https://b2.xiaoxi404.com/img/BandwidthAlliance.webp)
+![BandwidthAlliance](https://b2.xiaoxi404.com/img/blog-pictrue/BandwidthAlliance.webp)
 除了blackblaze以外，阿里云也加入了这个联盟，有人也搞出来了阿里云OSS和cloudflare的白嫖图片存储的[方案](https://www.duangvps.com/archives/1793)，感兴趣的可以了解一下，我也考虑过用它，但是阿里云OSS海外版的开通需要海外手机账号，所以只能使用现在这套方案。
 
 ## 教程
+请忽略下面内容，直接参考backblaze的[官方Blog教程](https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/)
+
+---
+
 我是看这篇[博客](https://www.cnblogs.com/Sky-seeker/p/14213962.html)学会的，如果感兴趣话可以看他的，按博客中的步骤来设置即可。
 
 
@@ -20,7 +24,8 @@ backbalze是一家云存储厂商，他家存储一直以便宜著称，而且�
 
 ## 注意点
 我刚开始按照这篇博客来设置，死活没办法通过自己的域名来访问图片，通过backbalze的域名就可以访问，结果看到backblaze的[官方博客](https://help.backblaze.com/hc/en-us/articles/217666928-Using-Backblaze-B2-with-the-Cloudflare-CDN)里面说需要设置cloudflare的SSL为full（即完全）。
-![官方博客要求](https://b2.xiaoxi404.com/img/BackBlazeBlog.webp)
+
+![官方博客要求](https://b2.xiaoxi404.com/img/blog-pictrue/BackBlazeBlog.webp)
 
 
-![SSL/TLS设置](https://b2.xiaoxi404.com/img/cloudflareSetting.webp)
+![SSL/TLS设置](https://b2.xiaoxi404.com/img/blog-pictrue/cloudflareSetting.webp)

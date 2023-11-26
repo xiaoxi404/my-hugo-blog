@@ -1,7 +1,7 @@
 ---
 title: "vscode 使用 Hyper-V 的虚拟机进行伪远程开发"
 date: 2022-05-26T15:54:20+08:00
-draft: false
+draft: true
 slug: vscode-hyper-v
 ---
 

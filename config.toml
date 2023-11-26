@@ -27,7 +27,7 @@ url = ""
 weight = 1
 
 [[menu.main]]
-name = "乱七八糟"
+name = "Posts"
 url = "posts/"
 weight = 2
 
@@ -36,10 +36,10 @@ weight = 2
 #url = "leet-code/"
 #weight = 3
 
-[[menu.main]]
-name = "学习"
-url = "study/"
-weight = 4
+#[[menu.main]]
+#name = "学习"
+#url = "study/"
+#weight = 4
 
 [[menu.main]]
 name = "Subscribe"
