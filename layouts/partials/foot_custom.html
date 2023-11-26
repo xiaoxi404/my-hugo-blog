@@ -3,4 +3,6 @@
 
 <script defer src="//yihui.org/js/center-img.js"></script>
 
+{{ if .IsPage }}
 {{ template "_internal/disqus.html" . }}
+{{ end }}
