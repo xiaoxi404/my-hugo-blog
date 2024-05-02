@@ -79,9 +79,9 @@ ExecStartPost=/usr/bin/ip link set dev ve-rcore up
 ~~~
 如需持久化，需修改文件。ufw用户可选择修改/etc/ufw/sysctl.conf。
 
-## nspawn测网络配置
+## nspawn侧网络配置
 
-直接使用systemd-networkd
+nspawn侧选择直接使用systemd-networkd来进行网络配置
 
 启用systemd-networkd
 ~~~
